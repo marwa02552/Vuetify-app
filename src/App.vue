@@ -1,26 +1,41 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+ <v-app>
+  <NavbarComp/>
+   <LendingComp/>
+   <AboutComp/>
+   <PortfoComp/>
+   <ProjectComp/>
+ </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
+import NavbarComp from './components/NavbarComp.vue';
+import LendingComp from './components/LendingComp.vue';
+import AboutComp from './components/AboutComp.vue';
+import PortfoComp from './components/PortfoComp.vue';
+import ProjectComp from './components/ProjectComp.vue';
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  components:{
+    NavbarComp,
+    LendingComp,
+    AboutComp,
+    PortfoComp,
+    ProjectComp
+    
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+*{
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+}
+:root{
+ --mainPadding:9%;
 }
 </style>
+
